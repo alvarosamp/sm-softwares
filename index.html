@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>S&amp;M Softwares — Software de matching de editais e CRM de licitações</title>
+<meta name="description" content="S&M Softwares desenvolve o Edital Matcher (matching automático de catálogo x edital com IA) e o Bid Bunny CRM, testados em produção dentro de uma operação real de licitações." />
+<link rel="stylesheet" href="styles.css?v=8" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#home" class="brand">
+      <span class="brand-mark">S&amp;M</span>
+      S&amp;M Softwares
+    </a>
+    <nav class="main-nav">
+      <a href="#produtos">Produtos</a>
+      <a href="#setores">Para quem</a>
+      <a href="#habilitacao">Confiança</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contato" class="btn btn-ghost">Falar com vendas</a>
+      <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div>
+        <span class="eyebrow">Matching de editais · IA aplicada · CRM de licitações</span>
+        <h1>Software que lê o edital e diz, em minutos, o que o seu catálogo atende.</h1>
+        <p class="lead">A S&amp;M Softwares desenvolve o <strong>Edital Matcher</strong> e o <strong>Bid Bunny CRM</strong> — nascidos dentro da TOR Tecnologia, fabricante que já opera de verdade em licitações. Não é teoria: é o mesmo software que roda na nossa própria operação, disponível agora para outras empresas que disputam editais.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
+          <a href="#produtos" class="btn btn-ghost">Ver produtos</a>
+        </div>
+        <div class="trust-line">
+          <span>Validado em operação real</span>
+          <span class="dot"></span>
+          <span>Motor de IA com MLOps (MLflow + Evidently)</span>
+          <span class="dot"></span>
+          <span>Conformidade LGPD</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="mock-window">
+          <div class="mock-topbar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-row">
+              <span>Switch PoE 24 portas Gigabit — req. 3.2</span>
+              <span class="mock-badge open">Atende</span>
+            </div>
+            <div class="mock-row">
+              <span>Módulo óptico SFP+ 10G — req. 4.1</span>
+              <span class="mock-badge open">Atende</span>
+            </div>
+            <div class="mock-row">
+              <span>Budget PoE mínimo 370W — req. 3.5</span>
+              <span class="mock-badge progress">Verificar</span>
+            </div>
+            <div class="mock-row">
+              <span>Suporte a QinQ nativo — req. 5.0</span>
+              <span class="mock-badge danger">Não atende</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Produtos</span>
+        <h2>Três produtos reais: dois para quem disputa editais, um para quem os abre</h2>
+        <p>Não são conceitos. Edital Matcher e Bid Bunny CRM são os sistemas que a TOR Tecnologia usa hoje para disputar licitações de equipamentos de telecom. Erário é o motor preditivo mais novo do portfólio, já funcional e testado, para quem está do outro lado do balcão: prefeituras e autarquias.</p>
+      </div>
+      <div class="segments-grid">
+        <div class="segment-card">
+          <span class="tag">Produto 01 · Motor de IA</span>
+          <h3>Edital Matcher <span class="product-sub">by S&amp;M</span></h3>
+          <p class="product-tagline">O edital em PDF vira uma lista de "atende / verificar / não atende" em minutos.</p>
+          <p>Pipeline próprio de OCR → embeddings (pgvector) → RAG → LLM: lê o PDF do edital, extrai os requisitos técnicos e cruza automaticamente com o seu catálogo de produtos. Cada resultado vem com score e justificativa gerada por IA, exportável em XLSX, PDF e CSV. Multi-tenant, pronto para várias equipes ou clientes.</p>
+        </div>
+        <div class="segment-card">
+          <span class="tag">Produto 02</span>
+          <h3>Bid Bunny CRM <span class="product-sub">by S&amp;M</span></h3>
+          <p class="product-tagline">Do portal ao pós-disputa, tudo num único lugar.</p>
+          <p>CRM operacional para o ciclo de licitação: cadastro de portais (PNCP, Comprasnet, Licitanet, BLL Compras), acompanhamento de editais, produtos, disputa e pós-disputa — com roteiro de operação por portal para a equipe nunca perder um prazo.</p>
+        </div>
+        <div class="segment-card">
+          <span class="tag">Produto 03 · Motor preditivo · Para o setor público</span>
+          <h3>Erário <span class="product-sub">by S&amp;M</span></h3>
+          <p class="product-tagline">Prevê o mês seguinte da arrecadação e avisa antes do desvio virar problema de caixa.</p>
+          <p>ERP financeiro/orçamentário com motor preditivo próprio: previsão de arrecadação por fonte de receita (Holt-Winters com sazonalidade, a partir de 24 meses de histórico) e detecção automática de desvio orçamentário, classificada por severidade. API multi-tenant, testada de ponta a ponta.</p>
+        </div>
+      </div>
+      <div class="roadmap-note">
+        <span class="roadmap-tag">Em desenvolvimento</span>
+        <p>O motor preditivo e a API do <strong>Erário</strong> já funcionam e têm cobertura de testes automatizados. O que falta: dashboard web para o usuário final e exportação de relatório no mesmo padrão do Edital Matcher (XLSX/PDF). Hoje o produto é consumido via API/Swagger.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETORES -->
+  <section id="setores">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Para quem é</span>
+        <h2>Dois lados do mesmo balcão de licitação</h2>
+        <p>Edital Matcher e Bid Bunny CRM vendem para quem disputa editais. Erário vende direto para quem os abre.</p>
+      </div>
+      <div class="features-grid features-grid-4">
+        <div class="feature-card">
+          <div class="feature-icon">🏭</div>
+          <h3>Fabricantes e indústrias</h3>
+          <p>Empresas com catálogo técnico extenso (telecom, TI, equipamentos) que precisam responder editais rápido e sem erro de especificação — como a própria TOR Tecnologia.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔁</div>
+          <h3>Revendas e integradores</h3>
+          <p>Empresas que distribuem produtos de terceiros e disputam múltiplos editais por semana, precisando saber rápido o que cada catálogo atende.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Assessorias de licitação</h3>
+          <p>Escritórios e consultorias que cuidam da disputa para vários clientes ao mesmo tempo e precisam de um CRM único para portais, prazos e documentos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏛</div>
+          <h3>Prefeituras e autarquias</h3>
+          <p>Órgãos que precisam prever arrecadação por fonte de receita e detectar desvio orçamentário cedo — o público do Erário, vendido diretamente, sem passar por edital de terceiros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE CONFIAR -->
+  <section id="habilitacao" class="compliance-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Por que confiar na S&amp;M</span>
+        <h2>Não vendemos uma ideia. Vendemos o que já usamos.</h2>
+        <p>Edital Matcher e Bid Bunny CRM nasceram dentro da TOR Tecnologia para resolver um problema nosso: catálogo técnico grande, editais em PDF, prazo curto. Funcionaram lá antes de virarem produto para terceiros.</p>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-item">
+          <div class="num">Validado em produção</div>
+          <p>O mesmo motor de matching roda hoje na disputa real de editais da TOR Tecnologia, não só em ambiente de teste</p>
+        </div>
+        <div class="compliance-item">
+          <div class="num">Engenharia de IA própria</div>
+          <p>Pipeline RAG + LLM com rastreamento de experimentos (MLflow) e monitoramento de drift (Evidently) — rigor de quem constrói modelo preditivo, não de quem só integra API</p>
+        </div>
+        <div class="compliance-item">
+          <div class="num">LGPD</div>
+          <p>Multi-tenant com isolamento de dados por cliente e tratamento de dados desde a concepção do serviço</p>
+        </div>
+        <div class="compliance-item">
+          <div class="num">Suporte pós-contrato</div>
+          <p>Implantação, importação do catálogo e treinamento da equipe combinados por escrito antes da assinatura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Planos</span>
+        <h2>Preços de referência para propostas comerciais</h2>
+        <p>Valores de partida para planejamento — ajustados conforme tamanho do catálogo/histórico, volume de editais por mês e número de usuários.</p>
+      </div>
+      <div class="pricing-grid pricing-grid-4">
+        <div class="price-card featured">
+          <h3>Edital Matcher</h3>
+          <div class="price">R$ 2.900<small>/mês</small></div>
+          <div class="desc">Matching automático de catálogo x edital, com IA e exportação de laudo.</div>
+          <ul>
+            <li>Upload ilimitado de editais em PDF</li>
+            <li>Score com justificativa gerada por IA</li>
+            <li>Exportação XLSX, PDF e CSV</li>
+            <li>Multi-tenant e controle de usuários</li>
+          </ul>
+          <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
+        </div>
+        <div class="price-card">
+          <h3>Bid Bunny CRM</h3>
+          <div class="price">R$ 1.200<small>/mês</small></div>
+          <div class="desc">Gestão do ciclo de licitação, do portal ao pós-disputa.</div>
+          <ul>
+            <li>Cadastro de portais (PNCP, Comprasnet, Licitanet, BLL)</li>
+            <li>Acompanhamento de editais e prazos</li>
+            <li>Roteiro operacional por portal</li>
+            <li>Histórico de disputa e pós-disputa</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost">Falar com vendas</a>
+        </div>
+        <div class="price-card">
+          <h3>Edital Matcher + CRM</h3>
+          <div class="price">Sob consulta</div>
+          <div class="desc">Pacote integrado para operações com maior volume de editais.</div>
+          <ul>
+            <li>Os dois produtos integrados</li>
+            <li>Importação assistida do catálogo</li>
+            <li>Treinamento da equipe</li>
+            <li>Suporte prioritário</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost">Falar com vendas</a>
+        </div>
+        <div class="price-card">
+          <h3>Erário</h3>
+          <div class="price">R$ 3.400<small>/mês</small></div>
+          <div class="desc">Previsão de arrecadação e alertas de desvio, por fonte de receita.</div>
+          <ul>
+            <li>Motor preditivo (Holt-Winters sazonal)</li>
+            <li>Alertas de desvio com severidade</li>
+            <li>Importação de histórico via CSV</li>
+            <li>Acesso via API/Swagger — dashboard em desenvolvimento</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost">Falar com vendas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="cta-section">
+      <h2>Quer parar de ler edital manualmente até a última página?</h2>
+      <p>Fale com a gente e veja o Edital Matcher rodando com um edital real do seu setor.</p>
+      <div class="cta-actions">
+        <a href="#contato" class="btn btn-on-dark">Solicitar demonstração</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Contato</span>
+        <h2>Vamos ver o Edital Matcher com o seu catálogo</h2>
+        <p>Conte um pouco sobre sua empresa e o volume de editais que vocês disputam por mês.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>S&amp;M Softwares</h3>
+          <p>Matching de editais com IA e CRM de licitações — construídos dentro de uma operação real.</p>
+          <ul>
+            <li><strong>E-mail</strong>contato@smsoftwares.com.br</li>
+            <li><strong>Atendimento</strong>Segunda a sexta, 9h às 18h</li>
+            <li><strong>Foco</strong>Fabricantes, revendas e assessorias que disputam licitações — e prefeituras/autarquias que precisam prever arrecadação</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div>
+              <label for="orgao">Empresa</label>
+              <input type="text" id="orgao" name="orgao" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="perfil">Interesse</label>
+              <select id="perfil" name="perfil">
+                <option>Edital Matcher</option>
+                <option>Bid Bunny CRM</option>
+                <option>Edital Matcher + CRM</option>
+                <option>Erário — previsão de arrecadação</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre seu catálogo e quantos editais disputam por mês"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <p class="form-status form-note" hidden></p>
+          <p class="form-note">Este formulário ainda não está conectado a um envio real. Diga se quer que eu ligue a um serviço de e-mail antes de publicar.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="brand">
+        <span class="brand-mark">S&amp;M</span>
+        S&amp;M Softwares
+      </div>
+      <div class="footer-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#setores">Para quem é</a>
+        <a href="#habilitacao">Por que confiar</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> S&amp;M Softwares. Todos os direitos reservados.</span>
+      <span>Site de apresentação — protótipo local</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
