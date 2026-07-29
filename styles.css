@@ -338,6 +338,18 @@ h2 {
   gap: 20px;
 }
 
+.segments-grid.segments-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .segments-grid.segments-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .segments-grid.segments-grid-4 { grid-template-columns: 1fr; }
+}
+
 .segment-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
