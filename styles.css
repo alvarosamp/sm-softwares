@@ -339,11 +339,7 @@ h2 {
 }
 
 .segments-grid.segments-grid-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 900px) {
-  .segments-grid.segments-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 @media (max-width: 720px) {
@@ -425,11 +421,7 @@ h2 {
 }
 
 .features-grid.features-grid-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 900px) {
-  .features-grid.features-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 @media (max-width: 720px) {
@@ -493,11 +485,7 @@ h2 {
 }
 
 .pricing-grid.pricing-grid-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 900px) {
-  .pricing-grid.pricing-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 @media (max-width: 720px) {
