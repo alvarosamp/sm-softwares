@@ -86,41 +86,47 @@
         <p>Não são conceitos. Edital Matcher, Bid Bunny CRM e Ágora são sistemas que já rodam de ponta a ponta, com testes automatizados e uso real por trás. Erário e Pórtico formam a frente que vende direto para prefeituras e autarquias — o outro lado do balcão da licitação. Compasso é a aposta mais recente da S&amp;M, ainda em construção, fora do universo de licitação: agenda online e site de agendamento para salões, clínicas, oficinas e academias.</p>
       </div>
       <div class="segments-grid segments-grid-4">
-        <div class="segment-card">
+        <div class="segment-card" data-project="edital-matcher" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 01 · Motor de IA</span>
           <h3>Edital Matcher <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">O edital em PDF vira uma lista de "atende / verificar / não atende" em minutos.</p>
           <p>Pipeline próprio de OCR → embeddings (pgvector) → RAG → LLM: lê o PDF do edital, extrai os requisitos técnicos e cruza automaticamente com o seu catálogo de produtos. Cada resultado vem com score e justificativa gerada por IA, exportável em XLSX, PDF e CSV. Multi-tenant, pronto para várias equipes ou clientes.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
-        <div class="segment-card">
+        <div class="segment-card" data-project="bid-bunny" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 02</span>
           <h3>Bid Bunny CRM <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">Do portal ao pós-disputa, tudo num único lugar.</p>
           <p>CRM operacional para o ciclo de licitação: cadastro de portais (PNCP, Comprasnet, Licitanet, BLL Compras), acompanhamento de editais, produtos, disputa e pós-disputa — com roteiro de operação por portal para a equipe nunca perder um prazo.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
-        <div class="segment-card">
+        <div class="segment-card" data-project="agora" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 03 · Chatbot com IA</span>
           <h3>Ágora <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">Atendimento no WhatsApp que entende o menu, coleta dados e sabe a hora de chamar um humano.</p>
           <p>Plataforma de atendimento digital via WhatsApp Business API, com assistente virtual, fluxos conversacionais editáveis, módulo receptivo (busca, status, transferência com histórico preservado) e relatórios exportáveis. Portal de administração web incluído, pronto para Prova de Conceito em ambiente operacional.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
-        <div class="segment-card">
+        <div class="segment-card" data-project="erario" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 04 · Motor preditivo · Para o setor público</span>
           <h3>Erário <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">Prevê o mês seguinte da arrecadação e avisa antes do desvio virar problema de caixa.</p>
           <p>ERP financeiro/orçamentário com motor preditivo próprio: previsão de arrecadação por fonte de receita (Holt-Winters com sazonalidade, a partir de 24 meses de histórico) e detecção automática de desvio orçamentário, classificada por severidade. API multi-tenant, testada de ponta a ponta.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
-        <div class="segment-card">
+        <div class="segment-card" data-project="portico" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 05 · Planejamento · Para o setor público</span>
           <h3>Pórtico <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">Transforma a fase preparatória da contratação em dossiê pronto para publicar — DFD, ETP, TR e edital, com trilha de aprovação.</p>
           <p>Módulo de planejamento e dossiê da contratação exigido pela Lei nº 14.133/2021: monta DFD, estudo técnico preliminar e termo de referência a partir de modelos parametrizados, organiza anexos, mantém histórico de aprovação e prepara o pacote para publicação no PNCP. Pensado para municípios pequenos e médios, autarquias e consórcios com equipe enxuta e prazo apertado.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
-        <div class="segment-card">
+        <div class="segment-card" data-project="compasso" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="tag">Produto 06 · Agenda online · Fora do universo de licitação</span>
           <h3>Compasso <span class="product-sub">by S&amp;M</span></h3>
           <p class="product-tagline">Site de agendamento e painel de agenda para negócios de serviço — salão, clínica, oficina, academia.</p>
           <p>Núcleo multi-tenant configurável por segmento: cada cliente recebe um site público próprio para o cliente final marcar horário, mais um painel de agenda, catálogo de serviços e cadastro de clientes. Ainda no início: motor de agendamento e site público já funcionam e foram testados de ponta a ponta; faltam integração de WhatsApp, cobrança e templates visuais por segmento.</p>
+          <span class="card-more">Ver detalhes e telas →</span>
         </div>
       </div>
       <div class="roadmap-note">
@@ -366,6 +372,34 @@
     </div>
   </div>
 </footer>
+
+<!-- MODAL DE PROJETO -->
+<div class="project-modal" id="project-modal" hidden>
+  <div class="project-modal-backdrop" data-close></div>
+  <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+    <button class="project-modal-close" data-close aria-label="Fechar">✕</button>
+    <div class="project-modal-scroll">
+      <div class="pm-head">
+        <span class="tag" id="pm-tag"></span>
+        <h3 id="pm-title"></h3>
+        <p class="product-tagline" id="pm-tagline"></p>
+      </div>
+      <div class="pm-visual" id="pm-visual"></div>
+      <div class="pm-body">
+        <p id="pm-description"></p>
+        <h4>Principais recursos</h4>
+        <ul class="pm-features" id="pm-features"></ul>
+        <h4>Tecnologia</h4>
+        <div class="pm-stack" id="pm-stack"></div>
+        <div class="pm-status" id="pm-status"></div>
+      </div>
+      <div class="pm-actions">
+        <a href="#contato" class="btn btn-primary" data-close>Solicitar demonstração</a>
+        <a href="#planos" class="btn btn-ghost" data-close>Ver preço</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
